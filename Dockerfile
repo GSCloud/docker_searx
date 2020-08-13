@@ -1,9 +1,6 @@
 FROM alpine:3.9.6
-
-ARG VERSION=0.16.0
-
+ARG VERSION=0.17.0
 ENV BASE_URL=False IMAGE_PROXY=false UID=991 GID=991
-
 RUN apk -U upgrade \
  && apk add -t build-dependencies \
     build-base \
@@ -28,13 +25,8 @@ RUN apk -U upgrade \
  && sed -i "s/127.0.0.1/0.0.0.0/g" searx/settings.yml \
  && apk del build-dependencies \
  && rm -f /var/cache/apk/*
-
 COPY run.sh /usr/local/bin/run.sh
-
 RUN chmod +x /usr/local/bin/run.sh
-
 EXPOSE 8888
-
 LABEL maintainer="Fred Brooker <f@mxd.cz> @FredBrooker"
-
 CMD ["run.sh"]
