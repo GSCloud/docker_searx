@@ -26,7 +26,12 @@ SearX is a metasearch engine, inspired by the seeks project. It provides basic p
 
 ## Install searX
 
-* run **./deploy.sh**
+* locally run **./deploy.sh**
+
+or
+
+* `docker rm searx --force`
+* `docker run -d -p 8888:8888 --restart unless-stopped --name searx gscloudcz/searx`
 
 ## Configuration
 
