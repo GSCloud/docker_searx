@@ -16,23 +16,21 @@ SearX is a metasearch engine, inspired by the seeks project. It provides basic p
 
 ### Environment variables
 
-* IMAGE_PROXY : enables images proxying (default: false)
-* BASE_URL: [http://domain.tld](http://domain.tld) (default: false)
-* Port: 8888 (reverse proxy)
+* IMAGE_PROXY : enables images proxying (default: **false**)
+* BASE_URL: [http://domain.tld](http://domain.tld) (default: **false**)
+* PORT: **8888** (reverse proxy)
 
 ## Build container
 
-* run **./build.sh**
+* run: **./build.sh**
+* configuration: **.env**
 
 ## Install searX
 
-* locally run **./deploy.sh**
+* run: **./deploy.sh**
+* access: [http://localhost:8888/](http://localhost:8888/)
 
 or
 
 * `docker rm searx --force`
 * `docker run -d -p 8888:8888 --restart unless-stopped --name searx gscloudcz/searx`
-
-## Configuration
-
-* configuration is stored in: **.env**
