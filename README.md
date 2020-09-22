@@ -1,6 +1,8 @@
 # searX in Docker
 
-[https://hub.docker.com/r/gscloudcz/searx]
+DockerHub: [https://hub.docker.com/r/gscloudcz/searx]  
+GitHub: [https://github.com/GSCloud/docker_searx]  
+BitBucket: [https://bitbucket.org/gscloud/searx_docker]
 
 ## What is searX
 
@@ -34,3 +36,5 @@ or
 
 * `docker rm searx --force`
 * `docker run -d -p 8888:8888 --restart unless-stopped --name searx gscloudcz/searx`
+
+Author: Filip Oščádal aka Fred Brooker 💌 <oscadal@gscloud.cz>
