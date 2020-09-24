@@ -1,4 +1,4 @@
-# searX in Docker
+# Docker searX
 
 DockerHub: [https://hub.docker.com/r/gscloudcz/searx]  
 GitHub: [https://github.com/GSCloud/docker_searx]  
@@ -24,13 +24,13 @@ SearX is a metasearch engine, inspired by the seeks project. It provides basic p
 
 ## Build container
 
-* run: **./build.sh**
-* configuration: **.env**
+* **make build**
+* configuration file: **.env**
 
 ## Install searX
 
-* run: **./deploy.sh**
-* access: [http://localhost:8888/](http://localhost:8888/)
+* **make install**
+* local access: [http://localhost:8888/](http://localhost:8888/)
 
 or
 
