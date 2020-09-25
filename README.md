@@ -22,15 +22,14 @@ SearX is a metasearch engine, inspired by the seeks project. It provides basic p
 * BASE_URL: [http://domain.tld](http://domain.tld) (default: **false**)
 * PORT: **8888** (reverse proxy)
 
-## Build container
+## Usage
 
-* **make build**
-* configuration file: **.env**
-
-## Install searX
-
-* **make install**
-* local access: [http://localhost:8888/](http://localhost:8888/)
+* **make** - CLI help
+* 🆘 make build - rebuild image
+* 🆘 make docs - rebuild documentation
+* 🆘 make install - deploy image
+* configuration: **.env**
+* local access: [http://localhost:8888/]
 
 or
 
