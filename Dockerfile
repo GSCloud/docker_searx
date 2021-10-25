@@ -1,6 +1,6 @@
 FROM alpine:3.9.6
-ARG VERSION=0.18.0
-LABEL version=0.18.0
+ARG VERSION=1.0.0
+LABEL version=1.0.0
 LABEL description="SearX is a metasearch engine, inspired by the seeks project."
 LABEL maintainer="Fred Brooker <f@mxd.cz> Twitter: @FredBrooker"
 ENV BASE_URL=False IMAGE_PROXY=false UID=991 GID=991
